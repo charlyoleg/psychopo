@@ -1,0 +1,7 @@
+#.gitgnore
+*~
+.venv
+node_modules
+dist
+*.mp3
+*.pdf

@@ -1,0 +1,111 @@
+---
+pagination:
+  data: audio_lists
+  size: 1
+  alias: one_list
+# issue with pug and permalink
+#permalink: "!{one_list.slug}/index.html"
+---
+//- podcast.pug
+
+
+//- mixins
+mixin one_audio(name, date, url)
+  li
+    audio(controls="")
+      source(src='/' + url, type="audio/mpeg")
+      | Your browser does not support the audio element.
+    time= date
+    a(href='/' + url, download='') mp3
+    span= name
+
+mixin one_audio_link(name, date, url)
+  li
+    span= name
+    time= date
+    a(href='/' + url) mp3
+
+
+//- main
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    title Psychopo
+    meta(name='description', content='tentative de compréhension de nos subconscients')
+    meta(name='author', content='charlyoleg')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/css/psychopo_style.css?v=1.0')
+    //-link(rel='manifest', href='/manifest.json')
+    link(rel='icon', type='image/svg+xml', href='/psychopo_favicon.svg')
+    link(rel='icon', type='image/png', sizes="64x64", href='/psychopo_favicon_64x64.png')
+    link(rel='icon', type='image/png', sizes="256x256", href='/psychopo_favicon_256x256.png')
+  body
+
+    script
+      | function download_all() {
+      |   let urls = [
+      |
+      - var list = one_list.podcasts
+      each piece in list
+        | "/#{piece.url}",
+        |
+      |   ];
+      |   //console.log(urls);
+      |
+      |   let link = document.createElement('a');
+      |   link.setAttribute('download', '');
+      |   link.style.display = 'none';
+      |   document.body.appendChild(link);
+      |   for (var i = 0; i < urls.length; i++) {
+      |     link.setAttribute('href', urls[i]);
+      |     link.click();
+      |   }
+      |   document.body.removeChild(link);
+      |   //console.log("end of download_all()");
+      | }
+
+    header
+      a.logo(href="/")
+        img(src="/psychopo_favicon.svg")
+      h1
+        span.psycho Psycho
+        span.po po
+      p Le site qui vous aide à écouter ou télécharger les podcasts facilement.
+
+    main
+      h1 #{one_list.category}
+
+      p Quelques liens sur le sujet:
+      ul
+        - var link_list = one_list.links
+        each link_url in link_list
+          li
+            a(href=link_url)= link_url
+
+      .navig_menu
+        a.prev_next(href=pagination.href.previous)= '<<<'
+        a.logo(href="/")
+          img(src="/psychopo_favicon.svg")
+        a.prev_next(href=pagination.href.next)= '>>>'
+
+      .tutti
+        button(type='button', onclick='download_all()') Tout télécharger
+        span Téléchargez toute cette série et enregistrez les mp3 sur une clef-usb pour les écouter en voiture.
+
+      ol
+        - var list = one_list.podcasts
+        each piece in list
+          +one_audio(piece.title, piece.date, piece.url)
+
+      p.notes Attention, les dates affichées des podcasts peuvent être approximatives. En général, elles correspondent à la date d'enregitrement. Mais parfois, elles correspondent à la date de téléchargement!
+
+    footer
+      a.logo(href="/")
+        img(src="/psychopo_favicon.svg")
+      h1
+        span.psycho Psycho
+        span.po po
+      |
+      |
+      a(href='/mentions_legales/') Mentions légales

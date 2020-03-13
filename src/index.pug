@@ -1,0 +1,78 @@
+---
+# Workaround: Using pagination to access properly the data-config-file!
+pagination:
+  data: audio_lists
+  size: 100
+  alias: top_list
+---
+//- index.pug
+
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    title Psychopo
+    meta(name='description', content='tentative de compréhension de nos subconscients')
+    meta(name='author', content='charlyoleg')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/css/psychopo_style.css?v=1.0')
+    //-link(rel='manifest', href='/manifest.json')
+    link(rel='icon', type='image/svg+xml', href='/psychopo_favicon.svg')
+    link(rel='icon', type='image/png', sizes="64x64", href='/psychopo_favicon_64x64.png')
+    link(rel='icon', type='image/png', sizes="256x256", href='/psychopo_favicon_256x256.png')
+  body
+
+    header
+      a.logo(href="/")
+        img(src="/psychopo_favicon.svg")
+      h1
+        span.psycho Psycho
+        span.po po
+      p Le site qui vous aide à écouter ou télécharger les podcasts facilement.
+
+    main
+      .navig_menu
+        a.logo(href="/")
+          img(src="/psychopo_favicon.svg")
+
+      //- podcast
+      h3 Mes playlist-podcasts préférés
+      ul
+        each piece in top_list
+          li
+            a(href= piece.slug2)= piece.category
+
+      //- document-texte (can not use data because data must be an array because of pagination. So it is created manually below)
+      h3 Des fables de Jean de la Fontaine
+      ul
+        li
+          a(href='/fables_de_jean_de_la_fontaine/la_cigale_et_lafourmi.pdf') La cigale et la fourmi
+        li
+          a(href='/fables_de_jean_de_la_fontaine/le_chene_et_le_roseau.pdf') Le chêne et le roseau
+        li
+          a(href='/fables_de_jean_de_la_fontaine/le_corbeau_et_le_renard.pdf') Le corbeau et le renard
+
+      //- drawings
+      h3 Quelques dessins libre de droit
+      ul
+        li
+          a(href='/drawings/acupuncture.jpg') Acupuncture
+        li
+          a(href='/drawings/arbres.jpg') Des arbres
+        li
+          a(href='/drawings/grenouilles.png') Deux grenouilles
+        li
+          a(href='/drawings/lion.jpg') Le lion roi
+        li
+          a(href='/drawings/rois_mages.jpg') Les rois mages
+
+    footer
+      a.logo(href="/")
+        img(src="/psychopo_favicon.svg")
+      h1
+        span.psycho Psycho
+        span.po po
+      |
+      |
+      a(href='/mentions_legales/') Mentions légales
+

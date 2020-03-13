@@ -1,0 +1,34 @@
+{
+  "name": "psychopo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -fr dist",
+    "partial_clean": "rm -fr dist/css dist/podcast dist/*.html dist/*.png dist/*.svg",
+    "cp_audio": "mkdir -p dist/audio && rsync -r --update --progress audio dist/",
+    "build_css": "sass sass/psychopo_style.scss dist/css/psychopo_style.css",
+    "dev_css": "sass --watch sass/psychopo_style.scss dist/css/psychopo_style.css",
+    "testing_audio_list": "node scr/test_audio_list.js",
+    "build_eleventy": "eleventy",
+    "build_all": "run-p cp_audio build_css build_eleventy",
+    "serve": "eleventy --serve",
+    "dev": "eleventy --watch",
+    "view": "sensible-browser http://localhost:8080",
+    "live-serve": "live-server dist/",
+    "publish": "rsync -r --update --progress dist/ userabc@myserver.ovh:www/",
+    "dist_size": "du -sh dist",
+    "dist_mp3_list": "find dist -type f -iname '*.mp3' -exec md5sum {} + | sort -k 1 > dist_mp3.txt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "json5": "^2.1.1",
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.25.0"
+  }
+}

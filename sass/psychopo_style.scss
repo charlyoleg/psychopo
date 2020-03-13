@@ -1,0 +1,240 @@
+/* psychopo_style.scss */
+// a comment not visible in the css output
+
+// **************
+// style reset
+// **************
+// html {
+:root {
+  text-align: left;
+  font-size: 16px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+
+body {
+  background-color: #f7f3a8;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+// *************************
+// anchor default behavior
+// *************************
+a {
+  text-decoration: underline;
+  //text-decoration: none;
+}
+
+a:hover {
+  //text-decoration: underline;
+  text-decoration: none;
+}
+
+// *************************
+// direct directives: header
+// *************************
+
+body > header {
+  background-color: #d7e3a8;
+}
+
+body > header > a.logo {
+  display: inline-block;
+  background-color: #f7e3a8;
+  padding: 0.2rem;
+  margin: 2rem;
+  margin-bottom: 0.1rem;
+  border-radius: 0.2rem;
+}
+
+body > header > a.logo > img {
+  width: auto;
+  height: 96px;
+  padding: 0;
+  margin: 0;
+}
+
+body > header > h1 {
+  display: inline;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 0.1rem;
+}
+
+body > header > h1 > span.psycho {
+  font-style: italic;
+  color: #a0d8d0;
+}
+
+body > header > h1 > span.po {
+  font-style: normal;
+  color: #b5b1d3;
+}
+
+body > header > p {
+  font-size: 0.8rem;
+  font-weight: 100;
+  font-style: normal;
+  color: #b5b1d3;
+  margin-left: 3rem;
+  margin-top: 0.1rem;
+  //margin-bottom: 0.1rem;
+}
+
+
+// *************************
+// direct directives: footer
+// *************************
+
+body > footer {
+  background-color: #d7e3a8;
+  margin-top: 4rem;
+}
+
+body > footer > a.logo {
+  display: inline-block;
+  background-color: #f7e3a8;
+  padding: 0.2rem;
+  margin: 2rem;
+  border-radius: 0.2rem;
+}
+
+body > footer > a.logo > img {
+  width: auto;
+  height: 96px;
+  padding: 0;
+  margin: 0;
+}
+
+body > footer > h1 {
+  display: inline;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+body > footer > h1 > span.psycho {
+  font-style: italic;
+  color: #a0d8d0;
+}
+
+body > footer > h1 > span.po {
+  font-style: normal;
+  color: #b5b1d3;
+}
+
+body > footer > a {
+  font-size: 0.7rem;
+  font-weight: 200;
+  margin-left: 3rem;
+}
+
+
+// *************************
+// direct directives: main
+// *************************
+
+body > main {
+  margin-left: 3rem;
+}
+
+body > main > h1 {
+  color: #c98fd6;
+}
+
+body > main > ul {
+  margin-bottom: 3rem;
+}
+
+// navig menu
+body > main > div.navig_menu {
+  text-align: right;
+  margin-right: 3rem;
+}
+
+body > main > div.navig_menu > a.logo {
+  display: inline-block;
+  background-color: #f7e3a8;
+  padding: 0.2rem;
+  margin: 0;
+  border-radius: 0.2rem;
+}
+
+body > main > div.navig_menu > a.logo > img {
+  width: auto;
+  height: 48px;
+  padding: 0;
+  margin: 0;
+}
+
+body > main > div.navig_menu > a.prev_next {
+  background-color: #f7e3a8;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.2rem;
+}
+// end of navig menu
+
+body > main > div.tutti > button {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.8rem;
+  border: 0;
+  margin: 0.2rem;
+  margin-left: 4rem;
+  border-radius: 0.4rem;
+  background-color: #d7a2ef;
+  color: #594860;
+}
+
+body > main > div.tutti > button:hover {
+  box-shadow: 0 0 0.5em 0.2em hsl(10, 100%, 86%);
+}
+
+body > main > div.tutti > button:active {
+  color: #ffffff;
+  box-shadow: 0 0 0.5em 0.5em hsl(10, 100%, 86%);
+}
+
+body > main > div.tutti > span {
+  font-size: 0.8rem;
+  font-weight: 100;
+  font-style: normal;
+  color: #b5b1d3;
+  margin-left: 1rem;
+}
+
+body > main > ol > li > span {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+body > main > ol > li > time {
+  font-size: 0.8rem;
+  font-style: italic;
+  //margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+body > main > ol > li > audio {
+  width: 24rem;
+  margin-right: 1rem;
+}
+
+body > main > p.notes {
+  font-size: 0.8rem;
+  font-weight: 100;
+  font-style: normal;
+  color: #b5b1d3;
+  margin-top: 2rem;
+  //margin-bottom: 0.1rem;
+}
+
+
+
+

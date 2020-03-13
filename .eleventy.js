@@ -1,7 +1,7 @@
 // .eleventy.js
 
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("src/fables_de_la_fontaine");
+  eleventyConfig.addPassthroughCopy("src/fables_de_jean_de_la_fontaine");
   eleventyConfig.addPassthroughCopy("src/drawings");
   eleventyConfig.addPassthroughCopy({"src/favi":"/"});
   eleventyConfig.setPugOptions({ pretty: true });

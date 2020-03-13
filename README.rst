@@ -25,4 +25,8 @@ Getting Started
 Underlying Technologies
 =======================
 
+Pug_ and 11ty_.
+
+.. _Pug: https://pugjs.org
+.. _11ty: https://www.11ty.dev/
 

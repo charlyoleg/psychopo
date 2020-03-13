@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -fr dist",
-    "partial_clean": "rm -fr dist/css dist/podcast dist/*.html dist/*.png dist/*.svg",
+    "partial_clean": "rm -fr dist/css dist/podcast dist/*.html dist/*.png dist/*.svg dist/drawings dist/fables_de_jean_de_la_fontaine dist/mentions_legales",
     "cp_audio": "mkdir -p dist/audio && rsync -r --update --progress audio dist/",
     "build_css": "sass sass/psychopo_style.scss dist/css/psychopo_style.css",
     "dev_css": "sass --watch sass/psychopo_style.scss dist/css/psychopo_style.css",

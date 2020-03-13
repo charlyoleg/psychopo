@@ -5,6 +5,6 @@ node_modules
 dist
 # large files
 *.mp3
-*.pdf
+#*.pdf
 src/drawings/*.jpg
 src/drawings/*.png

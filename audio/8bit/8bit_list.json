@@ -1,0 +1,51 @@
+// 8bit_list.json (json5 format)
+
+{
+  category: '8bit',
+  slug: '8bit',
+  slug2: 'podcast/',
+  links: [
+    'https://www.auboutdufil.com/index.php?tag=8-bit',
+    'https://jaunter.bandcamp.com/',
+    'https://kubbimusic.com/',
+    'https://pornophonique.de/',
+  ],
+  podcasts: [
+    {
+      title: 'Bend',
+      musician: 'binaerpilot',
+      url: 'binaerpilot_bend.mp3',
+    },
+    {
+      title: 'Reset',
+      musician: 'Jaunter',
+      url: 'jaunter_reset.mp3',
+    },
+    {
+      title: 'Cascade',
+      musician: 'Kubbi',
+      url: 'kubbi_cascade.mp3',
+    },
+    {
+      title: 'Yeah',
+      musician: "Mizuki's last chance",
+      url: 'mizuki_s_last_chance_yeah.mp3',
+    },
+    {
+      title: 'Sad Robot',
+      musician: 'Pornophonique',
+      url: 'pornophonique_sad_robot.mp3',
+    },
+    {
+      title: 'Space Invaders',
+      musician: 'Pornophonique',
+      url: 'pornophonique_space_invaders.mp3',
+    },
+    {
+      title: 'LSF 7th gear remix',
+      musician: 'SmallRadio',
+      url: 'smallradio_lsf_7th_gear_remix.mp3',
+    },
+  ],
+}
+

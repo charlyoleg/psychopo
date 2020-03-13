@@ -1,0 +1,69 @@
+// chanson_francaise_list.json (json5 format)
+
+{
+  category: 'Chanson francaise',
+  slug: 'chanson_francaise',
+  slug2: 'podcast/1',
+  links: [
+    'https://www.auboutdufil.com/index.php?tag=chanson-francaise',
+    'http://haricotslibres.free.fr/',
+    'https://www.moije.net/',
+    'https://archive.org/details/jamendo-000219',
+    ''http://hopmado.free.fr/,
+    ''http://diynote.free.fr/JeuCadres.htm,
+    ''https://archive.org/details/jamendo-000938,
+  ],
+  podcasts: [
+    {
+      title: 'Le regard des autres',
+      musician: 'Arcadiaz',
+      url: 'arcadiaz_le_regard_des_autres.mp3',
+    },
+    {
+      title: 'Le cauchemar de Kipling',
+      musician: 'Contreband',
+      url: 'contreband_le_cauchemar_de_kipling.mp3',
+    },
+    {
+      title: 'Le noir et la rage',
+      musician: 'DIY note',
+      url: 'diy_note_le_noir_et_la_rage.mp3',
+    },
+    {
+      title: 'Mme Asperge',
+      musician: 'En attendant Mado',
+      url: 'en_attendant_mado_mme_asperge.mp3',
+    },
+    {
+      title: 'Elle est comme ca',
+      musician: 'Fred Oscar',
+      url: 'fred_oscar_elle_est_comme_ca.mp3',
+    },
+    {
+      title: 'Jacques',
+      musician: 'Jack à la lanterne',
+      url: 'jack_a_la_lanterne_jacques.mp3',
+    },
+    {
+      title: 'Gérard',
+      musician: 'Le sac à boulons',
+      url: 'le_sac_a_boulons_gerard.mp3',
+    },
+    {
+      title: 'Le malheur de Sophie',
+      musician: 'Les bernado',
+      url: 'les_bernado_le_malheur_de_sophie.mp3',
+    },
+    {
+      title: 'Ca tombera pas plus bas',
+      musician: 'Les haricots libres',
+      url: 'les_haricots_libres_ca_tombera_pas_plus_bas.mp3',
+    },
+    {
+      title: "Bouquet d'opinions",
+      musician: 'Moije',
+      url: 'moije_bouquet_d_opinions.mp3',
+    },
+  ],
+}
+

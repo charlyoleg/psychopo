@@ -1,0 +1,69 @@
+// classique_list.json (json5 format)
+
+{
+  category: 'Classique',
+  slug: 'classique',
+  slug2: 'podcast/2',
+  links: [
+    'https://www.auboutdufil.com/index.php?tag=classique',
+    'https://www.serpentsoundstudios.com/',
+    'https://jelsonic.com/royalty-free/',
+    'https://dexterbritain.com/',
+    'https://incompetech.com/',
+    'https://www.danielbautista.com/',
+    'https://www.circusmarcus.net/',
+    'https://lacrymosa.tuxfamily.org/?Derriere-les-cendres-de-mon-coeur',
+  ],
+  podcasts: [
+    {
+      title: 'The return',
+      musician: 'Alexander Nakarada',
+      url: 'alexander_nakarada_the_return.mp3',
+    },
+    {
+      title: 'Les accouplements répétitifs',
+      musician: 'Circus Marcus',
+      url: 'circus_marcus_les_accouplements_repetitifs.mp3',
+    },
+    {
+      title: 'L'absence de réminiscene',
+      musician: 'Cire de Sacub & Yvalain',
+      url: 'cire_de_sacub_yvalain_l_absence_de_reminiscene.mp3',
+    },
+    {
+      title: 'Mozart, Symphony 25',
+      musician: 'Daniel Bautista',
+      url: 'daniel_bautista_mozart_symphony_25.mp3',
+    },
+    {
+      title: 'Vivaldi, Les quatres saisons, été',
+      musician: 'Daniel Bautista',
+      url: 'daniel_bautista_vivaldi_les_quatres_saisons_ete.mp3',
+    },
+    {
+      title: 'the time to run',
+      musician: 'Dexter Britain',
+      url: 'dexter_britain_the_time_to_run.mp3',
+    },
+    {
+      title: 'Tango des squelettes',
+      musician: 'Guillaume de la Chapelle',
+      url: 'guillaume_de_la_chapelle_tango_des_squelettes.mp3',
+    },
+    {
+      title: 'Saying Goodbye in the rain',
+      musician: 'Jelsonic',
+      url: 'jelsonic_saying_goodbye_in_the_rain.mp3',
+    },
+    {
+      title: 'Canon in D major',
+      musician: 'Kelvin MacLeod',
+      url: 'kelvin_macleod_canon_in_d_major.mp3',
+    },
+    {
+      title: 'Eteinte',
+      musician: 'Lacrymosa industry',
+      url: 'lacrymosa_industry_eteinte.mp3',
+    },
+  ],
+}

@@ -4,7 +4,7 @@
 node_modules
 dist
 # large files
-*.mp3
+#*.mp3
 #*.pdf
 #src/drawings/*.jpg
 #src/drawings/*.png

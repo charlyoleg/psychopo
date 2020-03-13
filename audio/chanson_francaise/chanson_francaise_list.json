@@ -9,9 +9,9 @@
     'http://haricotslibres.free.fr/',
     'https://www.moije.net/',
     'https://archive.org/details/jamendo-000219',
-    ''http://hopmado.free.fr/,
-    ''http://diynote.free.fr/JeuCadres.htm,
-    ''https://archive.org/details/jamendo-000938,
+    'http://hopmado.free.fr/',
+    'http://diynote.free.fr/',
+    'https://archive.org/details/jamendo-000938',
   ],
   podcasts: [
     {

@@ -15,8 +15,8 @@ mixin one_audio(name, musician, url)
     audio(controls="")
       source(src='/' + url, type="audio/mpeg")
       | Your browser does not support the audio element.
-    span.musician= musician
     a(href='/' + url, download='') mp3
+    span.musician= musician
     span= name
 
 mixin one_audio_link(name, musician, url)

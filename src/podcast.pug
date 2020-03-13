@@ -10,19 +10,19 @@ pagination:
 
 
 //- mixins
-mixin one_audio(name, date, url)
+mixin one_audio(name, musician, url)
   li
     audio(controls="")
       source(src='/' + url, type="audio/mpeg")
       | Your browser does not support the audio element.
-    time= date
+    span.musician= musician
     a(href='/' + url, download='') mp3
     span= name
 
-mixin one_audio_link(name, date, url)
+mixin one_audio_link(name, musician, url)
   li
     span= name
-    time= date
+    span.musician= musician
     a(href='/' + url) mp3
 
 
@@ -96,9 +96,8 @@ html(lang="en")
       ol
         - var list = one_list.podcasts
         each piece in list
-          +one_audio(piece.title, piece.date, piece.url)
+          +one_audio(piece.title, piece.musician, piece.url)
 
-      p.notes Attention, les dates affichées des podcasts peuvent être approximatives. En général, elles correspondent à la date d'enregitrement. Mais parfois, elles correspondent à la date de téléchargement!
 
     footer
       a.logo(href="/")

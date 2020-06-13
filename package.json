@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "clean": "rm -fr dist",
     "partial_clean": "rm -fr dist/css dist/podcast dist/*.html dist/*.png dist/*.svg dist/drawings dist/fables_de_jean_de_la_fontaine dist/mentions_legales",
